@@ -48,7 +48,7 @@ function App() {
           )}
         </div>
         <div className="toggle">
-          <div class="checkbox-wrapper-25">
+          <div className="checkbox-wrapper-25">
             <input
               type="checkbox"
               checked={balloon}
