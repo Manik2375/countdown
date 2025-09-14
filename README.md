@@ -1,6 +1,6 @@
 # Countdown — Smart India Hackathon 2025 (Club Event)
 
-This repository contains a small React + Vite site created for a club event — a countdown page and registration QR used to promote the team's participation in Smart India Hackathon 2025.
+This repository contains a small React + Vite project, created for club event hackathon that's coming. It's a countdown timer that will be displayed on the screens. The countdown is when the event will start. 
 
 Quick highlights
 - Simple responsive landing page with a flip-clock countdown.
@@ -8,7 +8,7 @@ Quick highlights
 - Built with Vite for fast dev and small production bundles.
 - Deploys via GitHub Pages.
 
-Getting started
+# How to run it locally
 
 
 1. Install dependencies
