@@ -13,8 +13,8 @@ function App() {
     <>
       <div>
         <div className="logos">
-          <img src="/public/acm.png" alt="ACM Logo" />
-          <img src="/public/sih.png" alt="SIH logo" />
+          <img src="/acm.png" alt="ACM Logo" />
+          <img src="/sih.png" alt="SIH logo" />
         </div>
         <div className="content">
           <h1>Smart India Hackathon 2025</h1>
@@ -22,7 +22,7 @@ function App() {
           <div className="img-wrapper">
             <h2>Register Now (Open with University ID)</h2>
             <img
-              src="/public/qr.png"
+              src="/qr.png"
               alt="QR Code"
               style={{ width: "250px" }}
             />
