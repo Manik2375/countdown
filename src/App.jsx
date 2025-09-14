@@ -4,8 +4,8 @@ import FlipClockCountdown from "@leenguyen/react-flip-clock-countdown";
 import "@leenguyen/react-flip-clock-countdown/dist/index.css";
 import "./App.css";
 
-import Aurora from "./assets/Aurora";
-import Ballpit from "./assets/Ballpit";
+import Aurora from "./components/Aurora";
+import Ballpit from "./components/Ballpit";
 
 import acmImg from "./assets/acm.png";
 import sihImg from "./assets/sih.png";
