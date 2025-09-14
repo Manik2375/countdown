@@ -33,7 +33,7 @@ function App() {
             <Ballpit
               count={100}
               gravity={0.8}
-              friction={1}
+              friction={.97}
               wallBounce={0.8}
               followCursor={false}
               colors={["#3A29FF", "#FF94B4", "#FF3232"]}
