@@ -1,12 +1,31 @@
-# React + Vite
+# Countdown — Smart India Hackathon 2025 (Club Event)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains a small React + Vite site created for a club event — a countdown page and registration QR used to promote the team's participation in Smart India Hackathon 2025.
 
-Currently, two official plugins are available:
+Quick highlights
+- Simple responsive landing page with a flip-clock countdown.
+- Background visuals (Aurora / Ballpit) toggled by a checkbox.
+- Built with Vite for fast dev and small production bundles.
+- Deploys via GitHub Pages.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Getting started
 
-## Expanding the ESLint configuration
+1. Install dependencies
+   `npm install`
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+2. Run dev server
+   `npm run dev`
+
+3. Build for production
+   `npm run build`
+
+4. Serve production bundle locally for verification
+   `npm run preview`
+
+
+Packages used (core)
+- `vite` — build tool and dev server
+- `react, react-dom` — UI framework
+- `@vitejs/plugin-react` — React fast refresh plugin (if enabled)
+- `@leenguyen/react-flip-clock-countdown` — flip-clock countdown component used on the page
+- `Aurora, Ballpit` — local visual/background components
