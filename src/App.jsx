@@ -7,25 +7,25 @@ import "./App.css";
 import Aurora from "./assets/Aurora";
 import Ballpit from "./assets/Ballpit";
 
+import acmImg from "./assets/acm.png";
+import sihImg from "./assets/sih.png";
+import qrImg from "./assets/qr.png";
+
 function App() {
   const [balloon, setBalloon] = useState(false);
   return (
     <>
       <div>
         <div className="logos">
-          <img src="/acm.png" alt="ACM Logo" />
-          <img src="/sih.png" alt="SIH logo" />
+          <img src={acmImg} alt="ACM Logo" />
+          <img src={sihImg} alt="SIH logo" />
         </div>
         <div className="content">
           <h1>Smart India Hackathon 2025</h1>
           <FlipClockCountdown to={new Date("19-sep-2025").getTime()} />
           <div className="img-wrapper">
             <h2>Register Now (Open with University ID)</h2>
-            <img
-              src="/qr.png"
-              alt="QR Code"
-              style={{ width: "250px" }}
-            />
+            <img src={qrImg} alt="QR Code" style={{ width: "250px" }} />
           </div>
         </div>
         <div className="background">
@@ -34,7 +34,7 @@ function App() {
               count={100}
               gravity={0.8}
               friction={0.9}
-              wallBounce={0.5}
+              wallBounce={0.7}
               followCursor={false}
               colors={["#3A29FF", "#FF94B4", "#FF3232"]}
             />
