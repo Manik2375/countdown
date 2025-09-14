@@ -1,0 +1,83 @@
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.logos {
+  position: fixed;
+  right: 2em;
+  top: 2em;
+  width: 12em;
+  height: 3em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
+}
+.logos > img {
+  max-width: 7em;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em;
+  gap: 5em;
+}
+
+h1 {
+  font-size: 4rem;
+  text-align: center;
+  font-family: "Changa One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 2rem;
+}
+.img-wrapper {
+  display: grid;
+  place-items: center;
+  margin-top: 1em;
+}
+h2 {
+  text-align: center;
+  font-weight: 200;
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+
+.content img {
+  margin-inline: auto;
+}
+
+.background {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  width: 100%;
+  height: 800px;
+}
+:root {
+  --fcc-flip-duration: 0.7s;
+  --fcc-spacing: 13.68px;
+  --fcc-digit-block-width: 91.2px;
+  --fcc-digit-block-height: 136.8px;
+  --fcc-digit-block-radius: 1.25rem;
+  --fcc-digit-block-spacing: 6.84px;
+  --fcc-digit-font-size: 91.2px;
+  --fcc-label-font-size: 27.36px;
+  --fcc-label-color: inherit;
+  --fcc-background: #000000ff;
+  --fcc-digit-color: #fff;
+  --fcc-divider-color: hsla(0, 0%, 100%, 0.4);
+  --fcc-divider-height: 1.71px;
+  --fcc-shadow: 0 0 3.42px 1.71px rgba(0, 0, 0, 0.1);
+  --fcc-separator-size: 8.55px;
+  --fcc-separator-color: currentColor;
+}
