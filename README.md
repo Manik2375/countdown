@@ -10,6 +10,7 @@ Quick highlights
 
 Getting started
 
+
 1. Install dependencies
    `npm install`
 
@@ -23,9 +24,12 @@ Getting started
    `npm run preview`
 
 
-Packages used (core)
+Packages used
 - `vite` — build tool and dev server
 - `react, react-dom` — UI framework
 - `@vitejs/plugin-react` — React fast refresh plugin (if enabled)
 - `@leenguyen/react-flip-clock-countdown` — flip-clock countdown component used on the page
-- `Aurora, Ballpit` — local visual/background components
+- `Aurora, Ballpit` — local visual/background components (From React bits)
+
+# Image 
+<img width="1919" height="1079" alt="Screenshot 2025-09-14 164038" src="https://github.com/user-attachments/assets/34397950-4b17-4ba1-9a90-c056832515e4" />
