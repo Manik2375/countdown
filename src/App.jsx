@@ -1,21 +1,20 @@
-import React, { Component } from "react";
+import { useState } from "react";
 
 import FlipClockCountdown from "@leenguyen/react-flip-clock-countdown";
 import "@leenguyen/react-flip-clock-countdown/dist/index.css";
 import "./App.css";
 
 import Aurora from "./assets/Aurora";
+import Ballpit from "./assets/Ballpit";
 
 function App() {
+  const [balloon, setBalloon] = useState(false);
   return (
     <>
       <div>
         <div className="logos">
           <img src="/public/acm.png" alt="ACM Logo" />
-          <img
-              src="/public/sih.png"
-              alt="SIH logo"
-            />
+          <img src="/public/sih.png" alt="SIH logo" />
         </div>
         <div className="content">
           <h1>Smart India Hackathon 2025</h1>
@@ -30,12 +29,34 @@ function App() {
           </div>
         </div>
         <div className="background">
-          <Aurora
-            colorStops={["#3A29FF", "#FF94B4", "#FF3232"]}
-            blend={0.5}
-            amplitude={1.0}
-            speed={0.5}
-          />
+          {balloon ? (
+            <Ballpit
+              count={100}
+              gravity={0.8}
+              friction={0.9}
+              wallBounce={0.5}
+              followCursor={false}
+              colors={["#3A29FF", "#FF94B4", "#FF3232"]}
+            />
+          ) : (
+            <Aurora
+              colorStops={["#3A29FF", "#FF94B4", "#FF3232"]}
+              blend={0.5}
+              amplitude={1.0}
+              speed={0.5}
+            />
+          )}
+        </div>
+        <div className="toggle">
+          <div class="checkbox-wrapper-25">
+            <input
+              type="checkbox"
+              checked={balloon}
+              onChange={(e) => {
+                setBalloon(e.currentTarget.checked);
+              }}
+            />
+          </div>
         </div>
       </div>
     </>
