@@ -22,7 +22,7 @@ function App() {
         </div>
         <div className="content">
           <h1>Smart India Hackathon 2025</h1>
-          <FlipClockCountdown to={new Date("19-sep-2025").getTime()} />
+          <FlipClockCountdown to={new Date("22-sep-2025").getTime()} />
           <div className="img-wrapper">
             <h2>Register Now (Open with University ID)</h2>
             <img src={qrImg} alt="QR Code" style={{ width: "250px" }} />
