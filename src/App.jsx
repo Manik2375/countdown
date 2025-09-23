@@ -13,6 +13,10 @@ import qrImg from "./assets/qr.png";
 
 function App() {
   const [balloon, setBalloon] = useState(false);
+
+  const now = new Date();
+  const targetDate = new Date(now.getTime() + 2 * 24 * 60 * 60 * 1000 + 59 * 60 * 1000);
+
   return (
     <>
       <div>
@@ -22,7 +26,7 @@ function App() {
         </div>
         <div className="content">
           <h1>Smart India Hackathon 2025</h1>
-          <FlipClockCountdown to={new Date("22-sep-2025").getTime()} />
+          <FlipClockCountdown to={targetDate.getTime()} />
           <div className="img-wrapper">
             <h2>Register Now (Open with University ID)</h2>
             <img src={qrImg} alt="QR Code" style={{ width: "250px" }} />
